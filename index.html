@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hello React!</title>
+    <script src="https://cdn.bootcss.com/react/15.4.2/react.min.js"></script>
+    <script src="https://cdn.bootcss.com/react/15.4.2/react-dom.min.js"></script>
+    <script src="https://cdn.bootcss.com/babel-standalone/6.22.1/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="example"></div>
+    <!-- 1. 定义组件 class
+        2. class extends React.Component {
+        render(){
+        return <span>111</span>
+    }
+    }
+     3.使用组件
+     ReactDOM.render(
+         <Comp></Comp>,
+
+     )
+
+ -->
+    <script type="text/babel">
+         class Comp extends React.Component{
+             render(){
+                 return <span>hello superhan</span>
+             }
+         }
+
+            var oDiv=document.getElementById("example");
+            ReactDOM.render(
+                <Comp></Comp>,
+                oDiv
+            );
+
+    </script>
+  </body>
+</html>

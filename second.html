@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hello React!</title>
+    <script src="https://cdn.bootcss.com/react/15.4.2/react.min.js"></script>
+    <script src="https://cdn.bootcss.com/react/15.4.2/react-dom.min.js"></script>
+    <script src="https://cdn.bootcss.com/babel-standalone/6.22.1/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="example"></div>
+    <script type="text/babel">
+    // 属性不能随便修改
+         class Comp extends React.Component{
+             render(){
+                 return <span>我叫{this.props.name},今年{this.props.age}</span>;
+             }
+         }
+         ReactDOM.render(
+             <Comp name="superhan" age="23" />,
+             document.getElementById("example")
+         )
+    </script>
+  </body>
+</html>
