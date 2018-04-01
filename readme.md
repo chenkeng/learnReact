@@ -1,1 +1,4 @@
-# this repo record the demo when I learning react 
+# 
+
+
+http://www.cnblogs.com/SamWeb/p/
